@@ -56,31 +56,7 @@ const transactionSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    post_office: {
-        type: String,
-        // required: true
-    },
-
-    pin_code: {
-        type: String,
-        required: true
-    },
-    district: {
-        type: String,
-        required: true
-    },
-    city: {
-        type: String,
-        required: true
-    },
-    state: {
-        type: String,
-        required: true
-    },
-    country: {
-        type: String,
-        required: true
-    },
+    
     books:{
         type: [BookSchema],
         required: true
