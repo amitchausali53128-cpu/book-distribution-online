@@ -1,5 +1,23 @@
 const mongoose = require("mongoose");
 
+const BookSchema = new mongoose.Schema({
+    book_name: {
+        type: String,
+        required: true
+    },
+    book_quantity: {
+        type: Number,
+        required: true
+    },
+    book_price: {
+        type: Number,
+        required: true
+    },
+    book_format:{
+        type: String,
+    }
+});
+
 const transactionSchema = new mongoose.Schema({
     amount: {
         type: Number,
@@ -63,6 +81,10 @@ const transactionSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    books:{
+        type: [BookSchema],
+        required: true
+    }
 
 });
 
