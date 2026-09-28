@@ -40,7 +40,7 @@ const transactionSchema = new mongoose.Schema({
     },
     post_office: {
         type: String,
-        required: true
+        // required: true
     },
 
     pin_code: {
